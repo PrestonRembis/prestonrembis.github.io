@@ -24,15 +24,19 @@
 
     <h2>Enter your information here to contact me</h2>
 
-    <form id="user-form" method="post" action="form.php">
+    <form id="user-form" class="gform" method="POST" data-email="rembispreston@gmail.com" 
+    action="https://script.google.com/macros/s/AKfycbwNt7fkwwMYnsN7FLx2_o8T8iueZEVFGDiUVxpaidl8JiWNZy-_Zr1xVq6PHedRe08/exec">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
+
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" required>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
+        <input type="tel" id="phone" name="phone" >
 
         <input type="submit" value="Submit">
     </form id="user-form">
