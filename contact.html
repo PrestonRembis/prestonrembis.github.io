@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Preston's Website</title>
+    <link rel="icon" type="image/x-icon" href="/images/PersonalLogo6.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Website</h1>
+
+        <nav class ="navbar">
+            <a href="index.html"  style="--i:1" >Home</a>
+            <a href="about.html" style="--i:2">About</a>
+            <a href="#" style="--i:3">Portfolio</a>
+            <a href="contact.html" style="--i:4" class="active">Contact</a>
+        </nav class ="navbar">
+    </header>
+
+    <h2>Enter your information here to contact me</h2>
+
+    <form id="user-form" method="post" action="form.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <input type="submit" value="Submit">
+    </form id="user-form">
+
+
+    <script src="script2.js"></script>
+
+    <main>
+        <div id="clock"></div>
+
+        <script src="script.js"></script>
+    </main>
+    
+    
+
+    <footer>
+        <p>&copy; 2023 Preston Rembis</p>
+    </footer>
+</body>
+
+</html>
