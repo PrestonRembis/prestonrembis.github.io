@@ -22,14 +22,19 @@ header {
     z-index: 100;
 }
 
+.navbar {
+    margin: auto;
+}
+
 .navbar a{
     display: inline-block;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
     margin-left: 20px;
     margin-right: 20px;
     color: #33ccff;
     text-decoration: none; 
+    transition: 1s ease;
 }
 
 .navbar a:hover,
@@ -37,9 +42,28 @@ header {
     background-color: #33ccff;
     color: white;
     border: 2px solid #33ccff;
-    font-size: 18px;
+    font-size: 25px;
+}
+
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background: transparent;
+    font-size: 50px;
+    color: #33ccff;
+    text-decoration: none;
     transition: 1s ease;
 }
+
+.social-media a:hover,
+.social-media a:active {
+    background: transparent;
+    color: white;
+}
+
 
 .center {
     color: white;
@@ -50,14 +74,14 @@ header {
 }
 
 h2, h3 {
-    margin: 100px auto auto auto;
+    margin: 200px auto auto auto;
     color: #33ccff;
     text-align: center;
 }
 
 #user-form {
     width: 300px;
-    margin: 0 auto;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,31 +125,19 @@ input[type="submit"]:not(:hover) {
 
 #user-info-container {
     width: 300px;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
 }
 
-main {
-    color: rgb(165, 216, 236);
+.clock {
+    color: #33ccff;
     height: 100vh;
     display: flex;
     justify-content: left;
     align-items:end;
     font-size: 30px;
-}
-
-#clock:hover {
-    text-shadow: 5px 5px 5px white;
-    transition: .5s ease;
-    transition-delay: .5s;
-}
-
-#clock:not(:hover) {
-    text-shadow: none;
-    transition: 1s ease;
-    transition-delay: 1s;
 }
 
 footer{
