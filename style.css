@@ -84,6 +84,20 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    margin: auto auto 25px auto;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-style: none;
+}
+
+h5 {
+    margin: auto auto auto auto;
+    font-size: 50px;
+    color: #33ccff;
+}
+
 #user-form {
     width: 300px;
     margin: 30px auto;
@@ -157,4 +171,15 @@ footer{
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.videoimage {
+    display: flex;
+}
+
+.videoimage p{
+    margin: auto 50px auto 50px;
+    color: white;
 }

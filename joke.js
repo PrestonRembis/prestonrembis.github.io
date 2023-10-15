@@ -15,7 +15,7 @@ async function hello(){
             const setup = data.setup;
             const punch = data.punchline;
         
-            const jokeText = setup + punch;
+            const jokeText = setup + " " + punch;
             document.getElementById("joke-of-the-day").textContent = jokeText; 
 
             localStorage.setItem(storageKey, jokeText);
