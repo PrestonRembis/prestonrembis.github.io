@@ -2,7 +2,7 @@ const userForm = document.getElementById('user-form');
 const userInfoList = document.getElementById('user-info-list');
 
 userForm.addEventListener('submit', (event) => {
-  event.preventDefault();
+  // event.preventDefault();
 
   const nameInput = document.getElementById('name');
   const emailInput = document.getElementById('email');
