@@ -1,19 +1,23 @@
 const userForm = document.getElementById('user-form');
-const userInfoList = document.getElementById('user-info-list');
 
 userForm.addEventListener('submit', (event) => {
-  // event.preventDefault();
+  event.preventDefault(); // Prevent the default form submission
 
-  const nameInput = document.getElementById('name');
-  const emailInput = document.getElementById('email');
-  const phoneInput = document.getElementById('phone');
+  const formData = new FormData(userForm);
 
-  const name = nameInput.value;
-  const email = emailInput.value;
-  const phone = phoneInput.value;
-
-  const userInfo = document.createElement('li');
-  userInfo.textContent = `Name: ${name}, Email: ${email}, Phone: ${phone}`;
-  userInfoList.appendChild(userInfo);
-
+  fetch('https://script.google.com/macros/s/AKfycbwNt7fkwwMYnsN7FLx2_o8T8iueZEVFGDiUVxpaidl8JiWNZy-_Zr1xVq6PHedRe08/exec', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => {
+    console.log('Form submitted!', response);
+    // Optionally, you can perform actions upon successful form submission
+    // For example, display a success message or redirect the user back to the contact page
+    // Replace window.location.href with your desired redirect URL
+    window.location.href = 'contact.html';
+  })
+  .catch(error => {
+    console.error('Error submitting form:', error);
+    // Handle any errors that occurred during form submission
+  });
 });
