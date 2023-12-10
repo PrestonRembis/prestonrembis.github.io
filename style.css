@@ -212,3 +212,8 @@ footer{
     margin: auto 50px auto 50px;
     color: white;
 }
+
+.projects a:hover h4{
+    transition: .5s ease-in-out;
+    color: #33ccff;
+}
