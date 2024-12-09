@@ -1,82 +1,103 @@
 <!DOCTYPE html>
-<html lang = "en">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <title>Preston's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Preston Rembis</title>
     <link rel="icon" type="image/x-icon" href="/images/PersonalLogo6.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1>My Website</h1>
-
-        <nav class ="navbar">
-            <a href="index.html"  style="--i:1" >Home</a>
-            <a href="about.html" style="--i:2">About</a>
-            <a href="contact.html" style="--i:4" class="active">Contact</a>
-        </nav class ="navbar">
-
-        <div class="social-media">
-            <a href="https://github.com/PrestonRembis"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/prestonrembis/"><i class='bx bxl-linkedin-square'></i></a> 
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="logo">Preston Rembis</h1>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="social-media">
+                <a href="https://github.com/PrestonRembis"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/prestonrembis/"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
         </div>
     </header>
-    
-    <main>
-        <h2>About Me</h2>
-        <div class="projects">
-            <h5><u>Projects</u></h5>
-            <a href="https://github.com/PrestonRembis/RustBlackBoardTUI"><h4>Rust Google TUI</h4></a>
-            <div class="videoimage">
-                <iframe width="600" height="300" src="https://www.youtube-nocookie.com/embed/eIHSa6LCO44?si=Df28eVxyPDWUNeQt" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                <p>This was a class project where we could develop anything we wanted over the semester. We developed a text-based user interface (TUI) that interacted with the Google API. You can see your most recent emails, send emails, do Google searches from the TUI, and more. 
-                    I mainly worked on the frontend which was coded in Rust, which was new to me. Overall I am very proud of this project as in my experience Rust is a quite stringent and really pushes you to think. The group was able to produce a useful tool which required weekly meetings and working on one repository in Git which gave us great workflow experience.</p>
-            </div>
-            <h4>Senior Capstone - Event Planner</h4>
-            <div class="videoimage">
-                <iframe width="600" height="300" src="https://www.youtube.com/embed/EqZbq0ZaXy8?si=J2bMmrnpYUTiPBGc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                <p>My senior capstone project is a web and mobile application for events. The application was coded in Dart for the frontend and Javascript for the backend.
-                    I focused mainly on the frontend of the application. I worked in a group with 3 others throughout 2 semesters. Throughout the semesters we did an agile workflow.
-                    Sprints were two weeks long and we had to have at least 10 hours of work assigned for each person for each sprint. As a group we met twice weekly and did a basic standup meeting
-                    where sprint progress was discussed and worked out any issues with the application. We worked with a client who we met with throughout the semesters to communicate progress
-                    and get feedback on the application to satisfy the client's requirements.
-                </p>
-            </div>
-            <a href="https://github.com/PrestonRembis/nba-database-project"><h4>Database Project - NBA Stats</h4></a>    
-            <div class="videoimage">
-                <p>This project was made for a database class I took. The project was open-ended, and I ended up integrating one of my biggest hobbies sports.
-                    The stats displayed on the program are scraped from an NBA stats website and stored in my database, where there are a variety of data visualizations.
-                    I made this program in Python using the Streamlit library as a front-end, and used a variety of data libraries like pandas, matplotlib, and sqlite3
-                    for my database. I personally have found this program very useful for looking at player prop trends for sports betting, and fantasy basketball.
-                </p>
-            </div>
-        </div>
 
-        <div class="personal">
-            <h5><u>Personal</u></h5>
-            
-            <p></p>
+    <main class="projects-page">
+        <div class="container">
+            <section class="page-header">
+                <h2>My Projects</h2>
+                <p>Here are some of the key projects I've worked on during my academic journey.</p>
+            </section>
+
+            <section class="projects-grid">
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-media">
+                            <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/eIHSa6LCO44?si=Df28eVxyPDWUNeQt" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="project-info">
+                            <h3>Rust Google TUI</h3>
+                            <div class="project-tags">
+                                <span class="tag">Rust</span>
+                                <span class="tag">Google API</span>
+                                <span class="tag">TUI</span>
+                            </div>
+                            <p>A text-based user interface that interacts with the Google API. Features include viewing recent emails, sending emails, and performing Google searches from the TUI.</p>
+                            <a href="https://github.com/PrestonRembis/RustBlackBoardTUI" class="project-link">
+                                <i class='bx bxl-github'></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-media">
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/EqZbq0ZaXy8?si=J2bMmrnpYUTiPBGc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="project-info">
+                            <h3>Event Planner - Senior Capstone</h3>
+                            <div class="project-tags">
+                                <span class="tag">Dart</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Mobile</span>
+                                <span class="tag">Web</span>
+                            </div>
+                            <p>A comprehensive web and mobile application for event planning. Built using Dart for frontend and JavaScript for backend, following agile methodology with two-week sprints and regular client feedback.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <h3>NBA Stats Database</h3>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Streamlit</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">Data Analysis</span>
+                            </div>
+                            <p>A data-driven application that scrapes and visualizes NBA statistics. Built with Python using Streamlit for the frontend and SQLite for data storage. Features various data visualizations for player props and fantasy basketball analysis.</p>
+                            <a href="https://github.com/PrestonRembis/nba-database-project" class="project-link">
+                                <i class='bx bxl-github'></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
         </div>
     </main>
-    <section class="clock">
-        <div class="clock-text" id="clock">
-            <span></span>
-        </div>
-    </section>
-    <script src="script.js"></script>
-    
 
     <footer>
-        <p>&copy; 2023 Preston Rembis</p>
+        <div class="container">
+            <p>&copy; 2024 Preston Rembis. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-
-
-
-
 </html>
